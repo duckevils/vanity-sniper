@@ -1,6 +1,6 @@
   package main
 // bu kod  github.com/duckevils tarafından yazılmıştır.
-// credits to rush & ash & ingiltereli & noex & zons 
+// duckevils & zons & rush
 // discord.gg/israil 
 
 import (
@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"log"
 	"time"
-  "syscall"
-  "unsafe"
+        "syscall"
+        "unsafe"
 
 	"github.com/fatih/color"
 	"github.com/gorilla/websocket"
@@ -47,7 +47,7 @@ func baslikyap(title string) {
 	setConsoleTitle.Call(uintptr(unsafe.Pointer(titlePtr)))
 }
 func main() {
-	baslikyap("duckevils & rush & ash & ingiltereli & noex & zons")
+	baslikyap("duckevils & rush & zons")
 	renklicomnsole("info", "developed by duckevils")
 	client := NewWebSocketClient("wss://gateway-us-east1-b.discord.gg")
 	handler := &MessageHandler{client: client}
@@ -150,7 +150,7 @@ func (client *WebSocketClient) StartHeartbeat() {
 func (client *WebSocketClient) SendAuthPacket() {
 	token := d
 	intents := 1
-	properties := map[string]string{"os": "linux", "browser": "Maxthon", "device": "duckrushashzonsingiltereli"}
+	properties := map[string]string{"os": "linux", "browser": "Maxthon", "device": "duck.js"}
 	authData := map[string]interface{}{"token": token, "intents": intents, "properties": properties}
 	err := client.sendMessage(2, authData)
 	if err != nil {
@@ -243,7 +243,7 @@ func (handler *MessageHandler) guıldseysi(data map[string]interface{}) {
 		patchData := map[string]string{"code": guild}
         message := fmt.Sprintf("Guild update!  %v", guild)
 		go patchgonnder(patchURL, patchData)
-		message = fmt.Sprintf("*⌜ code : '  %v '  author : ' 1937 ' ⌟* ||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||ً @everyone @here https://tenor.com/view/akame-akame-ga-k-ill-anime-fighting-stance-windy-gif-17468654", guild) //////////////////////////duckevils///////////////////////////
+		message = fmt.Sprintf("*⌜ code : '  %v '  author : ' @duck.js ' ⌟* ||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||ً @everyone @here https://tenor.com/view/akame-akame-ga-k-ill-anime-fighting-stance-windy-gif-17468654", guild) //////////////////////////duckevils///////////////////////////
 		err := webhookgonder(message)
 		if err != nil {
 			renklicomnsole("error", fmt.Sprintf("Failed to send webhook: %v", err))
@@ -353,7 +353,7 @@ func mfahallet() string {
     resp := fasthttp.AcquireResponse()
     defer fasthttp.ReleaseResponse(resp)
 
-    req.SetRequestURI("https://canary.discord.com/api/v9/guilds/1937x1978xduckxevilsxforxever/vanity-url")
+    req.SetRequestURI("https://canary.discord.com/api/v9/guilds/0/vanity-url")
     req.Header.SetMethod("PATCH")
     duckevilsssssssssss(req)
 
